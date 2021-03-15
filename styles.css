@@ -1,0 +1,24 @@
+.link {
+
+	font-size: 30;
+	color: orange;
+	background-color: transparent;
+    font-size: 20px;
+}
+
+.main-font a{
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    border-style: groove;
+    display: inline-block;    
+    text-align: left;
+}
+
+body {
+
+    background-color :rgb(20, 28, 41);
+    text-align : center; 
+    color:white
+}
