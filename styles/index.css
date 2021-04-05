@@ -1,0 +1,159 @@
+﻿body {
+    background-color: #121212;
+    margin: auto;
+    font-family: 'Open Sans';
+    justify-content: center;
+}
+
+.font_color{
+
+    color: #FFFFFF;
+}
+    
+
+.baslik {
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Consolas';
+    position: relative;
+    left: 0;
+}
+
+.mp {
+    display: flex;
+    color: #FFFFFF;
+    flex-wrap: nowrap;
+    height: 458px;
+    justify-content: center;
+}
+.metin {
+    width: auto;
+    border: solid #FFC68A;
+    background-color: #414141;
+    border-radius: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    position: relative;
+    padding: 20px 200px 20px 200px;
+
+
+    
+}
+.panel {
+    border: solid #FFC68A ;
+    background-color: #414141;
+    border-radius: 10px 10px 10px 10px;
+    width: auto;
+    margin: 10px 10px ;
+    padding: 20px 100px 20px 100px;
+}
+
+.menu li {
+    display: inline;
+    color: #FFFFFF;
+    position: relative;
+    left: 20px;
+    border-radius: 10px 10px 0 0 ;
+    padding: 11px;
+    margin: auto;
+}
+
+.panel-text{
+
+    margin: 10px;
+    position: relative;
+    left: 10px;
+}
+
+
+ul {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #FE9E44;
+    height: 40px;
+
+    justify-content: space-around;
+}
+
+
+.alt a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+.alt a:hover {
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.alt a:active {
+    color: yellow;
+    background-color: transparent;
+}
+footer {
+    display: flex;
+    background-color: #FE9E44;
+    justify-content: center;
+    //height: 50px;
+    width:100%;
+    position: absolute;
+    bottom :0 ;
+}
+
+/*
+@media (max-width: 700px) {
+    
+    backroun-color = orange;
+}
+
+*/
+
+.buttonDiv{
+    margin: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.uploadButton {
+
+    box-shadow: 0px 14px 22px -7px #276873;
+    background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color: #BB86FC;
+    border-radius:8px;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Consolas;
+    font-size:20px;
+    font-weight:bold;
+    padding:20px 32px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+}
+.uploadButton:hover {
+    background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+    background-color:#408c99;
+}
+.uploadButton:active {
+    position:relative;
+    top:1px;
+}
+
+
+.image-center{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#textDiv{
+
+text-align: center;
+color: white;
+font-family 'Open Sans';
+
+}

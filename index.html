@@ -1,27 +1,39 @@
 ﻿<!DOCTYPE html>
 <html lang="tr">
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RT9ZCJEV66"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-RT9ZCJEV66');
+    </script>
+
     <meta charset="UTF-8">
+    <meta name="viewport"
+    content = "width=device-width, initial-scale=1">
     
     <title>FTS Designers</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Open+Sans|Consolas">
+    <script src="script.js" defer> </script>
 </head>
 
 <body>
-    <div class="main-font">
+    <div>
         <header>
-            <div class="baslik">
-                <div class="baslik_sol">
-                    <img src="https://www.marmara.edu.tr/_assets/marmara/custom/images/marmara_universitesi_logo.png" />
-                </div>
-                <div class="baslik_sag">
+            <div >
+                <div class="baslik">
                     <h1>FTS Designers</h1>
                 </div>
             </div>
             
 
 
-            <ul id="menu">
+            <ul class="menu">
                 <li>Anasayfa</li>
                 <li>İçindekiler</li>
                 <li>İletişim</li>
@@ -31,7 +43,7 @@
         <section>
             <div class="mp">
                 <div class="panel">
-                    <a>
+                    <a class="panel-text" ">
                         <br>
                         <strong> Proje Üyeleri</strong><br><br><br> 
                         İbrahim DEMİRCİ<br><br>
@@ -49,14 +61,31 @@
                     </a>
                 </div>
             </div>
+            <div class="buttonDiv">
+              <button onclick="hide()"><a href="#" class="uploadButton">Resim Yükle</a></button> 
+            </div>
 
+            <div class="image-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/220px-Image_created_with_a_mobile_phone.png" alt="Girl in a jacket" width="300" height="225">
+            </div>
+
+            <div class="buttonDiv">
+              <button onclick="change()"><a href="#" class="uploadButton">Yazı Yazdır</a></button> 
+            </div>
+
+            <div id="textDiv">
+                Resim Yüklendi
+            </div>
+
+
+            
 </section>
     </div>
     
     <br>
     <footer>
-        <div class="alt">
-            <a target="_blank" href="hakkimizda.html"><p class="link"> <u>Hakkımızda</u> </p> </a>
+        <div >
+          <!--  <a target="_blank" href="hakkimizda.html"><p class="link"> <u>Hakkımızda</u> </p> </a> --> 
         </div>
     </footer>
 
