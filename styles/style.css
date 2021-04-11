@@ -10,10 +10,14 @@ body {
 }
 
 .c_navbar {
+
     //font-family: 'Acme', sans-serif;
     //font-family: 'Patua One', cursive;
     font-family: 'Poppins', sans-serif;
     height:10vh;
+
+    
+
 }
 
 .logo{
@@ -37,7 +41,7 @@ body {
     // overflow: hidden;
     width: 70%;
     display: block;
-    margin: 10vh;
+    margin: 20vh;
     margin-left: auto;
     margin-right: auto;
     padding: 10px 10px;
