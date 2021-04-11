@@ -79,6 +79,6 @@ function showFile() {
     } else {
         alert("Seçtiðiniz görsel resim deðil!");
         dropArea.classList.remove("active");
-        dragText.textContent = "Sürükle ve Býrak";
+        dragText.textContent = "Sürükle Bırak";
     }
 }
