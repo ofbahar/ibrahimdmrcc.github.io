@@ -47,13 +47,13 @@ input.addEventListener("change", function () {
 dropArea.addEventListener("dragover", (event) => {
     event.preventDefault(); //buton kullanimini engelliyor
     dropArea.classList.add("active"); //border kesikli cizgi olmaktan cikiyor
-    dragText.textContent = "Býrak";
+    dragText.textContent = "Bırak";
 });
 
 //kullanici surukle biraktan ayrilirsa
 dropArea.addEventListener("dragleave", () => {
     dropArea.classList.remove("active");
-    dragText.textContent = "Sürükle ve Býrak";
+    dragText.textContent = "Sürükle Bırak";
 });
 
 //kullanici dosyayi surukle birak alanina birakirsa
