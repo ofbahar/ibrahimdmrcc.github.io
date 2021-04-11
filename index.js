@@ -13,7 +13,6 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-    butonGoster();
 }
 
 function butonGoster() {
@@ -48,13 +47,13 @@ input.addEventListener("change", function () {
 dropArea.addEventListener("dragover", (event) => {
     event.preventDefault(); //buton kullanimini engelliyor
     dropArea.classList.add("active"); //border kesikli cizgi olmaktan cikiyor
-    dragText.textContent = "Bırak";
+    dragText.textContent = "BÃ½rak";
 });
 
 //kullanici surukle biraktan ayrilirsa
 dropArea.addEventListener("dragleave", () => {
     dropArea.classList.remove("active");
-    dragText.textContent = "Sürükle ve Bırak";
+    dragText.textContent = "SÃ¼rÃ¼kle ve BÃ½rak";
 });
 
 //kullanici dosyayi surukle birak alanina birakirsa
@@ -72,14 +71,14 @@ function showFile() {
     if (validExtensions.includes(fileType)) { //kullanici bir gorsel secti ise
         let fileReader = new FileReader(); //filereadin objesi olusturuluyor
         fileReader.onload = () => {
-            let fileURL = fileReader.result; //fileUrl degiskenine yuklenen dosya kaynagi atanıyor.
-            let imgTag = `<img src="${fileURL}" alt="">`; //bir img tagi olusuturuluyor ve src ozelligine secilen dosya kaynagi atanıyor.
-            dropArea.innerHTML = imgTag; //olusturulan img tagi surukle birak alanına ekleniyor.
+            let fileURL = fileReader.result; //fileUrl degiskenine yuklenen dosya kaynagi atanÃ½yor.
+            let imgTag = `<img src="${fileURL}" alt="">`; //bir img tagi olusuturuluyor ve src ozelligine secilen dosya kaynagi atanÃ½yor.
+            dropArea.innerHTML = imgTag; //olusturulan img tagi surukle birak alanÃ½na ekleniyor.
         }
         fileReader.readAsDataURL(file);
     } else {
-        alert("Seçtiğiniz görsel resim değil!");
+        alert("SeÃ§tiÃ°iniz gÃ¶rsel resim deÃ°il!");
         dropArea.classList.remove("active");
-        dragText.textContent = "Sürükle ve Bırak";
+        dragText.textContent = "SÃ¼rÃ¼kle ve BÃ½rak";
     }
 }
