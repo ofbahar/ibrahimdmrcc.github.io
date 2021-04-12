@@ -15,11 +15,13 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-function butonGoster() {
+function butonGoster(kontrol) {
     var x = document.getElementById("start-button");
-    
+    console.log(kontrol)
+   	if(kontrol == 1)
         x.style.display = "inline-block";
-    
+    else
+    	x.style.display = "none";
     
 }
 
@@ -38,7 +40,7 @@ input.addEventListener("change", function () {
     //dosya secme islemi yapiliyor
     file = this.files[0];
     dropArea.classList.add("active");
-    butonGoster();
+    butonGoster(1);
     showFile(); //fonksiyon cagiriliyor
 });
 
@@ -61,7 +63,7 @@ dropArea.addEventListener("drop", (event) => {
     event.preventDefault(); //buton kullanimini engelliyor
     //yuklenen dosyalardan sadece 0. indisi seciyoruz.
     file = event.dataTransfer.files[0];
-    butonGoster();
+    butonGoster(1);
     showFile(); //fonksiyon cagiriliyor
 });
 
@@ -77,7 +79,8 @@ function showFile() {
         }
         fileReader.readAsDataURL(file);
     } else {
-        alert("Seçtiðiniz görsel resim deðil!");
+        alert("Seçtiğiniz görsel resim değil!");
+        butonGoster(0);
         dropArea.classList.remove("active");
         dragText.textContent = "Sürükle Bırak";
     }
