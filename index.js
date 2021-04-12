@@ -74,7 +74,7 @@ function showFile() {
         let fileReader = new FileReader(); //filereadin objesi olusturuluyor
         fileReader.onload = () => {
             let fileURL = fileReader.result; //fileUrl degiskenine yuklenen dosya kaynagi atanýyor.
-            let imgTag = `<img src="${fileURL}" alt="">`; //bir img tagi olusuturuluyor ve src ozelligine secilen dosya kaynagi atanýyor.
+            let imgTag = `<img id="secilmis-resim" src="${fileURL}" alt="">`; //bir img tagi olusuturuluyor ve src ozelligine secilen dosya kaynagi atanýyor.
             dropArea.innerHTML = imgTag; //olusturulan img tagi surukle birak alanýna ekleniyor.
         }
         fileReader.readAsDataURL(file);
@@ -84,4 +84,31 @@ function showFile() {
         dropArea.classList.remove("active");
         dragText.textContent = "Sürükle Bırak";
     }
+}
+
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("start-button");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "flex";
+  let islenmis = document.getElementById("secilmis-resim");
+  document.getElementById("img01").src = islenmis.src;
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
